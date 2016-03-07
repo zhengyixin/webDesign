@@ -1,0 +1,146 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.forum{
+	display:inline-block;
+	border:1px solid #bdbcc4;
+	margin-top:85px;
+	width:960px;
+	font-size:12px;
+}
+.ad{
+	background: url(../imgs/test.jpg);
+	margin-top: 4px;
+	height: 120px;
+	width: 960px;
+	border: 1px solid #eee;
+}
+.forum1{
+	border: 1px solid #ccc;
+	margin: 5px 0 5px 0;
+	font-size: 14px;
+	background-color: #fff;
+}
+.forum1 p{
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+}
+.forum1 p:nth-child(3){
+	margin-left: 15px;
+}
+#form1_p span,#form1_p2 span{
+	height: 30px;
+	line-height: 30px;
+	padding: 2px;
+	margin-left: 15px;
+}
+#form1_p span:nth-child(1){
+	font-weight: bold;
+	color: #060606;
+}
+#form1_p span:nth-child(2),#form1_p span:nth-child(4){
+	border-right: 2px solid #bdbcc4;
+}
+#form1_p span:nth-child(5){
+	float:right;
+}
+#form1_p span:nth-child(6){
+	float: right;
+}
+#form1_p2 span:nth-child(2){
+color: red
+}
+.forum2 button{
+	float:left;
+	width:70px;
+	height:30px;
+	background-color: #166de4;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.forum2 ul{
+	float:right;
+	font-size: 13px;
+}
+.forum2 li{
+	float:left;
+width:40px;
+height:30px;
+line-height: 30px;
+border: 1px solid #166de4;
+margin-left: 5px;
+
+}
+ a{
+	text-decoration: none;
+}
+.forum2 li:nth-child(1){
+	width:55px;
+}
+.forum3 {
+	clear: both;
+	margin: 5px;
+	font-size: 13px;
+	margin: 5px 5px 5px 5px;
+}
+.forum3 li{
+	float:left;
+width:100px;
+height:30px;
+line-height: 30px;
+border: 1px solid #166de4;
+margin-left: 5px;
+margin-top: 5px;
+}
+.forum3 span{
+	color: red;
+	font-weight: bold;
+}
+.forum4{
+	clear: both;
+	padding: 15px;
+	background-color: #fff;
+}
+.forum4 table thead tr{
+	
+	border-top: 1px solid #c0cfe3;
+	border-left: 1px solid #c0cfe3;
+	background-color: #c0cfe3;
+}
+
+/*.forum4 thead tr{
+	border-bottom: 1px solid #166de4;
+}
+.forum4 tbody tr{
+	border-bottom: 1px solid #166de4;
+}*/
+td{
+	border-bottom: 1px solid #c0cfe3;
+	margin: 0;
+}
+ .forum4 td{	
+ 	width:120px;
+ 	height: 40px;
+ 	line-height: 20px;
+}
+ .forum4 td p{
+ 	height:15px;
+ }
+.forum4 thead td:nth-child(1){
+	width:600px;
+}
+
+.forum4 tbody td{
+	text-align: left;
+}
+.forum4 tbody td:nth-child(3){
+	color:blue;
+}
+.tr1{
+	color: red;
+	font-weight: bold;
+}

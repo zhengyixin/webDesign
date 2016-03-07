@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+   <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+    <link href="css/content.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/password.js"></script>
+  </head>
+ <body>
+  <div id="top">
+    <div class="log"></div>
+      <div id="login">
+        <ul>
+        <li><a href="login.html">登录</a></li>
+        <li><a href="register.html">注册</a></li>
+      </ul>
+    </div>
+    <div id="top_1">
+      <ul class="top_span">
+        <li><a href="index.html">首页</a></li>
+        <li><a>软件</a></li>
+        <li><a href="share.html">学习分享</a></li>
+        <li><a>其它</a></li>
+      </ul>
+      <div class="span2">
+         <ul >
+                <li><a href="list.html">办公软件</a></li>
+                <li>程序设计</li>
+                <li>影视动画</li>
+                <li>平面设计</li>
+                <li>室内设计</li>
+                <li>网页设计</li>
+              </ul>
+      </div>
+    </div>
+  </div><!-- top end-->
+  <div class="main" >
+    <div class="login_con" id="register">
+                <form id="regform" name="regform" >
+                          <div class="row">
+                              <div class="row_left left1">用户名：</div>
+                              <div class="row_right right">
+                                  <input id="txtUserName1" name="txtUserName1"  class="wide" type="text" url=""/>
+                                  <div id="msg" ></div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="row_left left1">密 码：</div>
+                              <div class="row_right right"><input id="txtPassword1" name="txtPassword1" class="wide" type="password" minlength="6" maxlength="50"/>
+                                <div id="msg1" ></div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="row_left left1">确认密码：</div>
+                              <div class="row_right right"><input id="txtPassword2" name="txtPassword1" class="wide" type="password" equalTo="#txtPassword1" minlength="6" maxlength="50"/>
+                               <div id="msg2" ></div>
+                             </div>
+                          </div>
+                          <div class="row">
+                              <div class="row_left left1">邮 箱：</div>
+                              <div class="row_right right"><input id="txtEmail" name="txtEmail" onBlur="checkemail();" class="wide" type="text" maxlength="100"/><div id="msg3" ></div></div>
+                          </div>
+                          <div class="row">
+                              <div class="row_left left1">验证码：</div>
+                              <div class="row_right right1">
+                                  <input id="txtCode" name="txtCode" type="text" maxlength="50" style="height:25px; width:100px;ime-mode:disabled;text-transform:uppercase;"/>
+                                  <a id="verifyCode" style=" float:right; margin-right:30px;"  href="javascript:;" ><img id ="img" src="imgs/verify_code.png" width="80" height="25" alt="点击切换" title="点击切换" /> 换一个？</a>
+                              </div>
+                          </div>
+                          
+                          <div class="row">
+                              <div class="row_left left1">注册条款：</div>
+                              <div class="row_right  right2">
+                                  <input id="chkAgree" type="checkbox"  value="1" name="chkAgree"/>
+                                  <label for="chkAgree" class="red1">我已仔细阅读并接受<a href="#" target="_blank"><<注册条款>></a></label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="row_right right6">
+                                  <input id="btnSubmit1" name="btnSubmit1" type="button"   class="btn_submit" value="注 册" onclick="window.location.href='login.html';" />
+                                  <a href="#" class="a">遇到问题了？</a>
+                              </div>
+                          </div>
+                 </form>    
+            </div>
+              <div class="bg1"></div>
+    </div><!--main结束-->
+   <div id="foot">    
+      <p class="copyrighten2">版权所有：中南大学软件学院 Copyright ©  2015 </p>
+      <p class="copyrighten">本站资料均从互联网搜索整理而来，本站不提供资源存储。如有侵权，请附上版权证明邮件告知。 </p>
+    </div> 
+ </body>
+<script type="text/javascript">
+   $(document).ready(function () {                            
+  $('#txtUserName').focus (function(){
+ if( $('#txtUserName').val()=="用户名/邮箱")  {
+  $('#txtUserName').css("color","#000");
+   $('#txtUserName').val("");
+ }   
+});
+$('#txtUserName').blur (function(){
+  if( $('#txtUserName').val()=="")  {
+  $('#txtUserName').css("color","#c8c8c8");
+   $('#txtUserName').val("用户名/邮箱");
+ }   
+});
+
+});<!--$(ready) end  -->
+
+
+ </script>
+  </html>

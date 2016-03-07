@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+   <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+    <link href="css/content.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/password.js"></script>
+  </head>
+ <body>
+ <div id="top">
+    <div class="log"></div>
+      <div id="login">
+        <ul>
+        <li><a href="login.html">登录</a></li>
+        <li><a href="register.html">注册</a></li>
+      </ul>
+    </div>
+    <div id="top_1">
+      <ul class="top_span">
+        <li><a href="index.html">首页</a></li>
+        <li><a>软件</a></li>
+        <li><a href="share.html">学习分享</a></li>
+        <li><a>其它</a></li>
+      </ul>
+      <div class="span2">
+         <ul >
+                <li><a href="list.html">办公软件</a></li>
+                <li>程序设计</li>
+                <li>影视动画</li>
+                <li>平面设计</li>
+                <li>室内设计</li>
+                <li>网页设计</li>
+              </ul>
+      </div>
+    </div>
+  </div><!-- top end-->
+  <div class="main">
+      <div class="login_con" >
+                <form id="loginform" name="loginform"  >
+                         <div class="row ">
+                             <div class="row_left">帐　号：</div>
+                             <div class="row_right right3"><input id="txtUserName" name="txtUserName" class="wide" style="color:#c8c8c8 " type="text" maxlength="50"  value="用户名/邮箱" /></div>
+                         </div>
+                         <div class="row">
+                             <div class="row_left">密　码：</div>
+                             <div class="row_right right4"><input id="txtPassword" name="txtPassword" class="wide" type="password" minlength="6" maxlength="50" /></div>
+                         </div>
+                         <div class="row">
+                             <div class="row_right right5">
+                               <input id="chkRemember" name="chkRemember" class="checkbox" type="checkbox" style="vertical-align:middle"/>
+                               <label class="red" for="chkRemember">一周内自动登录</label>
+                               <a id="findpsw" href="#">忘记密码？</a>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <div class="row_left"></div>
+                             <div class="row_right">
+                               <input id="btnSubmit" name="btnSubmit"  type="button"  class="btn_submit" value="登 &nbsp;&nbsp;录" onclick="window.location.href='index.html';" />
+                                 </div>
+                         </div>
+                           <div class="row">
+                         <a id="rapid" href="register.html">快速注册</a>
+                       </div>
+                         <br class="clear" />
+                         <br class="clear" />
+                </form>
+            </div>
+            <div class="bg"></div>
+    </div><!--main结束-->
+   <div id="foot">    
+      <p class="copyrighten2">版权所有：中南大学软件学院 Copyright ©  2015 </p>
+      <p class="copyrighten">本站资料均从互联网搜索整理而来，本站不提供资源存储。如有侵权，请附上版权证明邮件告知。 </p>
+    </div> 
+ </body>
+<script type="text/javascript">
+   $(document).ready(function () {                            
+  $('#txtUserName').focus (function(){
+ if( $('#txtUserName').val()=="用户名/邮箱")  {
+  $('#txtUserName').css("color","#000");
+    $('#txtUserName').css("font-size","16px");
+   $('#txtUserName').val("");
+ }   
+});
+$('#txtUserName').blur (function(){
+  if( $('#txtUserName').val()=="")  {
+  $('#txtUserName').css("color","#c8c8c8");
+   $('#txtUserName').val("用户名/邮箱");
+ }   
+});
+$()
+
+});<!--$(ready) end  -->
+
+
+ </script>
+  </html>

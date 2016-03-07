@@ -1,0 +1,247 @@
+body{
+	/*font-size: 12px;*/
+	color: #666;
+	background: #eee;
+}
+ul,li,dd,dl,h2,h3,p,form{
+	margin: 0;
+	padding: 0;	
+}
+ul li{
+	list-style: none;
+}
+/*
+<a href="#">Office 2013</a>	
+								<a href="#">PowerPoint 2013</a> 
+								<a href="#">Microsoft Office 2010</a>
+								<a href="#">金山WPS Office</a>
+								<a href="#">PPT美化大师</a>  
+								<a href="#">Excel表格</a>								
+								<a href="#">word转pdf转换器</a>							
+								<a href="#">Foxit PDF Editor</a>
+								<a href="#">钉钉</a>
+*/
+#wapper{
+	width: 960px;
+	margin: 100px auto 0 auto;	
+	/*background: #ccc;*/
+}
+#sidebar{
+	width: 960px;
+}
+.sitemap{
+	font-size: 14px;
+	text-align: left;	
+	padding: 10px 0;
+	background: #fff;
+}
+.sitemap a{
+	text-decoration: none;
+	color: #00afe4;
+}
+#left{
+	width: 68%;
+	float: left;
+	
+}
+.sidebar_menu{
+    height: 52px;    
+    font-size: 16px;
+    text-align: center;
+    padding-top: 8px;
+    color: #555555;
+    width: 654px;
+}
+.sidebar_menu ul li{
+	float: left;
+	padding: 5px;
+	cursor: pointer;
+	width: 120px;
+	height: 30px;
+	border: 1px solid orange;
+	line-height: 30px;
+}
+.sidebar_menu li.hover{
+    background:#DFDFDF;
+}
+.sidebar_menu li.selected{
+    background-color: #6593ef;
+    color: #fff;
+    border-radius: 4px;
+}
+.sidebar_box{
+	margin-top: -10px;
+	font-size: 12px;
+	width: 654px;
+}
+.sidebar_box .two{
+	display: none;
+}
+.sidebar_box p{
+	color: #fff;
+	font-size: 16px;
+	text-align: left;
+	background: #6593ef;
+	padding: 5px 0;
+	text-indent: 10px;
+}
+.sidebar_box dl{
+	padding: 0 0 0 2px;
+	text-align: left;
+	background: #f1f4f5;
+	height: 235px;
+}
+.sidebar_box dl dd{
+	padding: 15px 0;
+}
+.sidebar_box dl dd a{
+    color: #474747;
+    display: inline-block;
+    line-height: 28px;
+    width:160px;
+    vertical-align: middle;
+    overflow:hidden;
+    text-align: center;
+    text-decoration:none;
+}
+.sidebar_box dl dd a:hover {
+	background:#ff9000;
+	color:#fff;
+	margin-left:-3px;
+	padding-left:3px;
+	opacity: 0.3;
+}
+#right{
+	width: 30%;
+	margin-left: 2%;
+	margin-top: 5%;
+	float: left;
+}
+aside {
+	display: block;
+}
+.widget h3 {
+    background: #f8f8f8;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+.widget-title i {
+	float: left;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	color: #2f889a;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 15px 0 0;
+	padding: 1px 0;
+	border-right: 1px solid #ddd;
+	border-radius: 2px 0 0 0;
+}
+.widget {
+	background: #fff;
+	margin:0 0 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	width:265px;
+	height: 270px;
+}
+#tag_cloud_widget {
+	position:relative;
+	width:240px;
+	height:240px;
+	margin: 10px auto 10px;
+}
+#tag_cloud_widget a {
+	position:absolute;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 14px;
+	text-decoration: none;
+	top:0px;
+	left:0px; 
+	padding: 3px 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+#tag_cloud_widget a:hover {
+	background: #d02f53;
+	display: block;
+    text-decoration: none;
+}
+#tag_cloud_widget a:nth-child(n) {
+	background: #666;
+	border-radius: 3px;
+	display: inline-block;
+	line-height: 18px;
+	margin: 0 10px 15px 0;
+}
+#tag_cloud_widget a:nth-child(2n) {
+	background: #d1a601;
+}
+#tag_cloud_widget a:nth-child(3n) {
+	background: #286c4a;
+}
+#tag_cloud_widget a:nth-child(5n) {
+	background: #518ab2;
+}
+#tag_cloud_widget a:nth-child(4n) {
+	background: #c91d13;
+}
+#middle{
+	width: 960px;
+	clear: both;
+	/*padding-top: 10px;*/
+}
+#middle ul li{
+	width: 930px;
+	margin: 10px 0;
+	float: left;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 10px 0 0 10px;
+}
+#middle .bg{
+	width: 30%;
+	float: left;
+	padding: 0 0 10px 0;
+}
+#middle .bg img{
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	border: 1px solid #ccc;
+
+}
+#middle .content{
+	width: 65%;
+	float: left;
+	padding: 0px 20px;
+	text-align: left;
+}
+#middle .content .title{
+	font-size: 22px;
+	color: #333;
+	cursor: pointer;
+}
+#middle .content .describe{
+	font-size: 14px;
+	line-height: 25px;
+	text-indent: 30px;
+}
+#middle .pic{
+	width: 75px;
+	height: 28px;
+	margin: 50px 0 10px 510px;
+}
+#middle ul li input.submit{
+	width: 75px;
+	height: 28px;
+	background: url(../imgs/reg.png);
+	border: none;
+	cursor: pointer;
+}
